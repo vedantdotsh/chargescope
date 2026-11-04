@@ -1,0 +1,8 @@
+.pbi/
+__pycache__/
+*.pyc
+.venv/
+data/raw/
+data/work/
+website-combined/downloads/
+*.zip

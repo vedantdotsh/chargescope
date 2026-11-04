@@ -1,0 +1,50 @@
+{
+  "capture_date": "2026-11-04",
+  "source": "Power BI Desktop PDF export; 2560px render; 47px export margins cropped without resampling",
+  "images": [
+    {
+      "file": "power-bi-1.png",
+      "sha256": "eaa7e41f341a638acecb134b935915924debcbeb6901666f08a912b8c432998a",
+      "source_sha256": "8ac26093de98f399cec6538b9cdfd4e089a4ae107d492e459f4d283866a11915",
+      "crop_box": [
+        47,
+        47,
+        2513,
+        1434
+      ]
+    },
+    {
+      "file": "power-bi-2.png",
+      "sha256": "38c07b544de398875b81b776151313f8bed14dd4100786149a9ecb5e4f126fc8",
+      "source_sha256": "29dd5759cd305a5a005bc46f59508973f857ca467ceceb135c9a0ebc5591c458",
+      "crop_box": [
+        47,
+        47,
+        2513,
+        1434
+      ]
+    },
+    {
+      "file": "power-bi-3.png",
+      "sha256": "e694c3f8af7b1750c67f330eac5ed0faf172b79299ad58558abc386a28227a2e",
+      "source_sha256": "af7fbc3672cf6f1a9beeef6faf82014e7d10b31acdb21a221ac025cc143fa9e5",
+      "crop_box": [
+        47,
+        47,
+        2513,
+        1434
+      ]
+    },
+    {
+      "file": "power-bi-4.png",
+      "sha256": "026890835a1d02d586ca8463dab11086cfa19b665097fdb9890908ada597539f",
+      "source_sha256": "00569c0045d068e0f2e28c75f65d8bb21280c9484672966fb8a424c7b54ddf54",
+      "crop_box": [
+        47,
+        47,
+        2513,
+        2552
+      ]
+    }
+  ]
+}

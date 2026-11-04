@@ -1,0 +1,29 @@
+[
+  {
+    "filename": "reg_0901.csv",
+    "url": "https://data.bundesnetzagentur.de/Bundesnetzagentur/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenregister_BNetzA_2026-09-01.csv",
+    "reference_date": "2026-09-01",
+    "sha256": "cdd8e38f1fa7e8512bd97caa8cf77e9f875436be1f8fe3fe1f2bd9789a504c5b",
+    "bytes": 55559083,
+    "license": "CC BY 4.0",
+    "attribution": "Bundesnetzagentur.de"
+  },
+  {
+    "filename": "stats.xlsx",
+    "url": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/_DL/Ladesaeuleninfrastruktur.xlsx?__blob=publicationFile&v=36",
+    "reference_date": "2026-09-01",
+    "sha256": "866de63203c03b40e981ccc1158a09c8d47f9671597c8431021ca0ef3662fcae",
+    "bytes": 373593,
+    "license": "CC BY 4.0",
+    "attribution": "Bundesnetzagentur.de"
+  },
+  {
+    "filename": "vg250ew.zip",
+    "url": "https://daten.gdz.bkg.bund.de/produkte/vg/vg250-ew_ebenen_1231/aktuell/vg250-ew_12-31.utm32s.gpkg.ebenen.zip",
+    "reference_date": "2025-12-31",
+    "sha256": "0ee5854c5e637e53362db9dcdf889ff9c57aa7f066a3b228f9fba14fcb570754",
+    "bytes": 70722124,
+    "license": "dl-de/by-2.0",
+    "attribution": "Bundesamt fuer Kartographie und Geodaesie (BKG); additional statistical attribution accompanies the original provider package"
+  }
+]

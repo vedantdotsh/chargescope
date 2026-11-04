@@ -1,0 +1,13 @@
+{
+  "format": "Power BI source project; no imported data cache",
+  "pinned_run": "f92f3ed285d0a0d4eef184bafa823c0567215ca8d5aec0ec6751e24bd3b678d0",
+  "required_csv_sha256": {
+    "bi_district.csv": "a0145c70c18b74cafd9d8e685c9fee6ead4226eaad027aede7a805d609e6f34e",
+    "bi_scenario.csv": "c20e6670fc7a915868638d2632facdfdc0151960f020fa15bd959dfbd8412882",
+    "bi_district_scenario.csv": "0976bfa10e687a6114ffffdb6d2002a44f1b8f54b81fab7025bf865e9ca4f3b3",
+    "bi_installation.csv": "cc7886808053fd212bd6c6c9dc904559c6fabc5f0835df51311fd2bbf33269a1",
+    "bi_point.csv": "adcd39e66f27c013da3feb0286a40238f9946438bd09d356d5bd145f02d327c8",
+    "bi_region_scenario.csv": "68c7e2561ecfb72dd31796397c3b418b7e3280b8c4de7d2a311c256f917d05d4",
+    "source_snapshot.csv": "8315b0856324d6693ea4f12611c12fa6a4949b3471a626c81be38f95c4ec037e"
+  }
+}
