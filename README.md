@@ -8,7 +8,9 @@ The registered Oder-Spree rate ranks first. Hypothetically excluding one flagged
 
 - Open `website-combined/index.html` for English/German, light/dark, connected district comparisons, a boxplot and nominal-capacity charts.
 - Four English Power BI slides are genuine Desktop PDF exports rendered at 2560px width. Gallery thumbnails are compressed; enlargement loads the full PNG. `review.html` is a compact self-contained preview and uses thumbnail-quality images only.
-- The repository and release downloads are private. Sign into an account with repository access: https://github.com/vedantdotsh/chargescope . No public website is deployed.
+- The repository and v1.0.0 release are public: https://github.com/vedantdotsh/chargescope . Download the Power BI source project at https://github.com/vedantdotsh/chargescope/releases/download/v1.0.0/ChargeScope-PowerBI-source.zip . Pinned-data setup is required; this is not a preloaded PBIX. No live website is deployed.
+
+Open `website-variations-v3/review.html` to keep the current design or compare three alternatives: **Comparison workbench**, **District profile**, and **Findings first**. The right-edge **Read the findings** button opens a short report in every option. Each keeps the same 18-district cohort, linked selection, comparison, scenario, language/theme switches and original-quality standalone gallery.
 
 ## Power BI source project
 

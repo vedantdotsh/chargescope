@@ -14,7 +14,7 @@ The boxplot uses type-7 quartiles and observed whiskers within 1.5 IQR fences. A
 
 The flagged 513-point Oder-Spree group changes 832 to 319 points, 22,057 to 16,414 nominal kW and 717 to 204 installation records. Population remains 179,142. This is not a corrected register or a claim about public access. Thirty-five Brandenburg points have unresolved geographical agreement. Different source dates do not form a time series. No demand, utilization, adequacy, ROI or site-suitability conclusion follows.
 
-Four English slides come from the Power BI Desktop PDF export of 4 November 2026, rendered at 2560px width. No chart pixels were redrawn. Standalone enlargement loads the full PNG; the self-contained preview embeds compressed thumbnails only. The source-project download includes the Report and SemanticModel, but not raw data or imported cache: data setup and a successful Desktop refresh are required. GitHub repository and releases are private.
+Four English slides come from the Power BI Desktop PDF export of 4 November 2026, rendered at 2560px width. No chart pixels were redrawn. Standalone enlargement loads the full PNG; the self-contained preview embeds compressed thumbnails only. The source-project download includes the Report and SemanticModel, but not raw data or imported cache: data setup and a successful Desktop refresh are required. The GitHub repository and v1.0.0 release are public.
 
 ## Deutsch
 
@@ -22,4 +22,4 @@ Alle 18 brandenburgischen Kreise werden verglichen; Berlin bleibt separat. Die 3
 
 Quote = Ladepunkte / Einwohner x 10.000. Landesquoten entstehen aus Summen, nicht aus dem Mittel der Kreisquoten. Quartile: Typ 7; Whisker: beobachtete Werte innerhalb 1,5 IQR. Nennleistung wird je Installation einmal gezaehlt; Installationsdatensaetze sind keine eindeutigen Standorte. Der hypothetische Ausschluss ist keine Registerkorrektur. Oeffentlicher Zugang, Nutzung und Bedarf sind nicht nachgewiesen. Unterschiedliche Stichtage ergeben keine Zeitreihe.
 
-Die vier Power-BI-Aufnahmen bleiben Englisch. Die Vollansicht verwendet die vollaufgeloesten PNGs; die kompakte Vorschau nur verkleinerte Bilder. Das Power-BI-Quellprojekt erfordert eigene Daten und eine erfolgreiche Aktualisierung. GitHub-Repository und Downloads sind privat.
+Die vier Power-BI-Aufnahmen bleiben Englisch. Die Vollansicht verwendet die vollaufgeloesten PNGs; die kompakte Vorschau nur verkleinerte Bilder. Das Power-BI-Quellprojekt erfordert eigene Daten und eine erfolgreiche Aktualisierung. GitHub-Repository und Version v1.0.0 sind öffentlich.
