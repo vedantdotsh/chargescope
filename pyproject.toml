@@ -12,3 +12,10 @@ dependencies = [
 
 [tool.uv]
 package = false
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "playwright>=1.50,<2", "pillow>=11,<13"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "national/tests", "tools/test_source_package.py"]
+pythonpath = [".", "tests", "tools"]

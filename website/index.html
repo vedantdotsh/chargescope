@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vedant Patil · Analysis projects</title>
+<meta name="description" content="Analysis projects by Vedant Patil, a Berlin-based M.Sc. Computer Science student: public data, checked before it is believed.">
+<link rel="canonical" href="https://analysis.madebyved.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://analysis.madebyved.com/">
+<meta property="og:title" content="Vedant Patil · Analysis projects">
+<meta property="og:description" content="Analysis projects by Vedant Patil, a Berlin-based M.Sc. Computer Science student: public data, checked before it is believed.">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%273%27 fill=%27%23171717%27/%3E%3Crect x=%274%27 y=%274%27 width=%278%27 height=%278%27 fill=%27%23ff9440%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Before first paint: travel only when motion is allowed.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#opening">Vedant Patil</a>
+    <nav aria-label="Sections">
+      <a class="nav-proj" href="#projects">Projects</a><a href="#method">How I work</a><a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="page" id="page">
+  <!-- The accent thread: one line from the opening to the ChargeScope card; it then leads the portal. -->
+  <div class="thread" aria-hidden="true"><i class="thread-fill"></i></div>
+  <i class="turn" aria-hidden="true"></i>
+
+  <div class="lead">
+    <section id="opening" class="sec" aria-labelledby="opening-h">
+      <span class="node" aria-hidden="true"></span>
+      <div class="frame opening-frame">
+        <p class="kick">Analysis projects</p>
+        <h1 id="opening-h">Vedant Patil</h1>
+        <p class="lede">I analyse public data and check whether a number means what it seems to mean.</p>
+        <p class="intro">Berlin-based M.Sc. Computer Science student exploring data analysis and AI. One finding is tested right below; the projects follow.</p>
+        <p class="cta"><a class="btn" href="#projects">See the projects <span aria-hidden="true">↓</span></a><a class="txt" href="#method">How I work</a></p>
+      </div>
+    </section>
+
+    <section id="proof" class="sec" aria-labelledby="proof-h">
+      <span class="node" aria-hidden="true"></span>
+      <div class="frame proof-frame">
+        <p class="kick">Proof · one number, checked</p>
+        <h2 id="proof-h"><span data-f="osName"></span>: rank <span data-f="rankA"></span> → <span class="acc" data-f="rankB"></span></h2>
+        <p class="plain"><b class="acc" data-f="rankB"></b> when every district’s largest single-site group is set aside.</p>
+        <figure class="inline-fig">
+          <canvas class="field" data-field="inline" role="img"></canvas>
+          <figcaption class="fig-cap" id="inline-cap"></figcaption>
+        </figure>
+        <p>Ranked by registered charging points per 10,000 residents, <span data-f="osName"></span> (<span data-f="osState"></span>) is <b data-f="rankA"></b> of Germany’s <b data-f="nDistricts"></b> districts.</p>
+        <p class="def"><b>Single-site group:</b> charging points registered at one coordinate by one operator, a grouping in the register rather than a verified site. The test sets aside each district’s own largest group at the same time and re-ranks all <span data-f="nDistricts"></span>. <span data-f="osName"></span>’s group holds <span data-f="osTop"></span> of its <span data-f="osPoints"></span> points. It is a sensitivity test: it does not fix the register and says nothing about who can use those points.</p>
+        <p class="meta"><span data-f="status"></span> data · register of <span data-f="regDate"></span> · <a data-to="caveats" href="">Full caveats and sources (plain text)</a></p>
+      </div>
+    </section>
+
+    <div class="stage" role="img">
+      <p class="stage-cap" id="stage-cap"><span class="cap-0"></span><span class="cap-a"></span><span class="cap-b"></span></p>
+      <p class="legend" aria-hidden="true"><span><i class="sw sw-mark"></i>district</span><span><i class="sw sw-acc"></i><span data-f="osName"></span></span><span><i class="sw sw-ink"></i>moves <span data-f="moveT"></span>+ places in the what-if</span></p>
+      <canvas class="field" data-field="stage" aria-hidden="true"></canvas>
+    </div>
+  </div>
+
+  <section id="method" class="sec" aria-labelledby="method-h">
+    <span class="node" aria-hidden="true"></span>
+    <div class="frame method-frame rise">
+      <p class="kick">How I work</p>
+      <h2 id="method-h">Question, data, check, finding</h2>
+      <p class="sub">Four stages for any dataset, shown here on the charging register.</p>
+      <ol class="rail">
+        <li class="stop">
+          <span class="dot" aria-hidden="true"></span>
+          <h3><span class="n">1</span> Question</h3>
+          <p>Pin down what is being counted before comparing anything.</p>
+          <figure class="mini"><div id="mini-q"></div><figcaption>One register, three counts. An installation is a record, not a site.</figcaption></figure>
+        </li>
+        <li class="stop">
+          <span class="dot" aria-hidden="true"></span>
+          <h3><span class="n">2</span> Data</h3>
+          <p>Put sources on a fair footing: rates instead of raw size, dates kept apart.</p>
+          <figure class="mini"><div id="mini-d"></div><figcaption id="mini-d-cap"></figcaption></figure>
+        </li>
+        <li class="stop">
+          <span class="dot" aria-hidden="true"></span>
+          <h3><span class="n">3</span> Check</h3>
+          <p>Apply one rule to everything and watch what moves. Unmatched rows stay visible.</p>
+          <figure class="mini"><div id="mini-c"></div><figcaption id="mini-c-cap"></figcaption></figure>
+        </li>
+        <li class="stop">
+          <span class="dot" aria-hidden="true"></span>
+          <h3><span class="n">4</span> Finding</h3>
+          <p>Write only what survives, with its status and limits.</p>
+          <figure class="mini">
+            <dl class="claim">
+              <div><dt>Holds</dt><dd>rank <span data-f="rankA"></span> in the register</dd></div>
+              <div><dt>Moves</dt><dd>to <span data-f="rankB"></span> in the what-if</dd></div>
+              <div><dt>Status</dt><dd data-f="status"></dd></div>
+              <div><dt>Not claimed</dt><dd>demand, adequacy, use</dd></div>
+            </dl>
+            <figcaption>A finding ships with its status and what it does not show.</figcaption>
+          </figure>
+        </li>
+      </ol>
+      <p class="stack">Python and SQL pipelines with pytest checks; results in a Power BI report and a written analysis.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="sec" aria-labelledby="projects-h">
+    <span class="node" aria-hidden="true"></span>
+    <div class="proj-head rise">
+      <p class="kick">Projects</p>
+      <h2 id="projects-h">Analysis projects</h2>
+      <p class="sub">Each starts with a question and ends with what survived the checks.</p>
+    </div>
+    <div class="cards">
+      <article class="card feat rise" aria-labelledby="cs-h">
+        <div class="card-fig">
+          <canvas class="field" data-field="card" role="img"></canvas>
+          <p class="fig-cap"><span data-f="nDistricts"></span> districts in what-if order; outline marks registered rank <span data-f="rankA"></span>.</p>
+        </div>
+        <div class="card-body">
+          <p class="status"><span class="chip ready">Write-up live</span><span><span data-f="status"></span> data</span></p>
+          <h3 id="cs-h">ChargeScope</h3>
+          <p class="q">When can you trust a charging-point ranking?</p>
+          <p class="desc">Four checks on <span data-f="dePoints"></span> registered charging points across <span data-f="nStates"></span> states and <span data-f="nDistricts"></span> districts, with a Brandenburg case study, method notes and a Power BI report.</p>
+          <ul class="tools" aria-label="Tools"><li>Python</li><li>SQL</li><li>pytest</li><li>Power BI</li></ul>
+          <a class="btn open" data-to="project" href="" aria-haspopup="dialog" aria-controls="portal">Open the analysis <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="card wip rise" aria-labelledby="ts-h">
+        <p class="status"><span class="chip">In progress</span><span>No findings yet</span></p>
+        <h3 id="ts-h">Tech Stops Germany</h3>
+        <p class="was">Started as Tech Stops Berlin</p>
+        <p class="q">Planned question: what do public tech job postings ask for, and how much of that reflects the feed rather than the job market?</p>
+        <figure class="schem">
+          <svg viewBox="0 0 300 132" role="img" aria-label="Schematic, not results: public job feeds, API ingestion, SQL tables, dashboards, then a findings write-up that is not done yet.">
+            <g class="s-box"><rect x="1" y="8" width="88" height="34" rx="6"/><rect x="106" y="8" width="88" height="34" rx="6"/><rect x="211" y="8" width="88" height="34" rx="6"/><rect x="1" y="74" width="140" height="50" rx="6"/></g>
+            <rect class="s-todo" x="159" y="74" width="140" height="50" rx="6"/>
+            <g class="s-arrow"><path d="M89 25h17M194 25h17M255 42v16H71v16M141 99h18"/></g>
+            <g class="s-t"><text x="45" y="29">Public feeds</text><text x="150" y="29">API ingestion</text><text x="255" y="29">SQL tables</text><text x="71" y="96">Job dashboards</text></g>
+            <g class="s-m"><text x="71" y="112">roles · seniority · skills</text><text x="229" y="96">Findings</text><text x="229" y="112">not written yet</text></g>
+          </svg>
+          <figcaption>Schematic of the pipeline, not results.</figcaption>
+        </figure>
+        <ul class="tools" aria-label="Tools"><li>Python</li><li>API ingestion</li><li>SQL</li><li>SQLite</li></ul>
+        <p class="nolink">Write-up in progress · no public link yet</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="sec" aria-labelledby="about-h">
+    <div class="frame about-frame rise">
+      <p class="kick">About</p>
+      <h2 id="about-h">Vedant Patil, Berlin</h2>
+      <p>M.Sc. Computer Science at SRH University Berlin, focusing on Big Data &amp; Artificial Intelligence. I am looking for data-analysis and AI internships.</p>
+      <ul class="tools" aria-label="Tools"><li>Python</li><li>SQL</li><li>SQLite</li><li>Power BI</li><li>pytest</li><li>API ingestion</li></ul>
+      <p class="links">
+        <a href="https://linkedin.com/in/patilvedant" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/vedantdotsh" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="foot">
+  <p>Charging figures: <span data-f="source"></span> (<span data-f="licence"></span>, <span data-f="attr"></span>). Residents: BKG VG250-EW of <span data-f="popDate"></span> (<span data-f="popLicence"></span>). The two dates differ; nothing here is a time series.</p>
+  <noscript><p>Figures and charts need JavaScript; the text still reads in order.</p></noscript>
+</footer>
+
+<dialog id="portal" class="portal" aria-labelledby="portal-h">
+  <i class="p-line" aria-hidden="true"></i>
+  <div class="p-panel">
+    <div class="p-in">
+      <i class="p-thread" aria-hidden="true"></i><i class="p-node" aria-hidden="true"></i>
+      <button class="p-close" type="button" autofocus>Close <span aria-hidden="true">✕</span></button>
+      <p class="kick">ChargeScope</p>
+      <h2 id="portal-h">When can you trust a charging-point ranking?</h2>
+      <div class="p-grid">
+        <figure class="p-fig">
+          <canvas class="field" data-field="portal" role="img"></canvas>
+          <figcaption class="fig-cap"><span data-f="nDistricts"></span> districts in what-if order; the trail runs from registered rank <span data-f="rankA"></span> to <span data-f="rankB"></span>.</figcaption>
+        </figure>
+        <div class="p-text">
+          <p class="p-lede"><span data-f="osName"></span> ranks <span data-f="rankA"></span> of <span data-f="nDistricts"></span> German districts by registered charging points per 10,000 residents. The analysis asks what that rank rests on.</p>
+          <dl class="facts">
+            <div><dt>Charging points</dt><dd data-f="dePoints"></dd></div>
+            <div><dt>States · districts</dt><dd><span data-f="nStates"></span> · <span data-f="nDistricts"></span></dd></div>
+            <div><dt>Register</dt><dd data-f="regDate"></dd></div>
+            <div><dt>Status</dt><dd data-f="status"></dd></div>
+          </dl>
+          <p class="p-what"><b class="acc" data-f="rankB"></b> when every district’s largest single-site group is set aside: a sensitivity test, not a fix to the register.</p>
+          <p class="p-inside">Inside: the national ranking, four checks, a Brandenburg case study, method notes and the Power BI report.</p>
+          <p class="p-go"><a class="btn go" data-to="project" href="">Continue to the full analysis <span aria-hidden="true">→</span></a></p>
+          <p class="p-host">Opens in this tab · <a data-to="caveats" href="">caveats and sources (plain text)</a></p>
+          <p><button class="p-back" type="button">Back to projects</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

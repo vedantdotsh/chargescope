@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://analysis.madebyved.com/sitemap.xml

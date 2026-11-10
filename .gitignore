@@ -4,6 +4,10 @@ __pycache__/
 .venv/
 data/raw/
 data/work/
-website-combined/downloads/
+website/chargescope/
+website/_headers
+website/_redirects
+website/project/evidence/
+.pytest_cache/
 *.zip
 .scratch/

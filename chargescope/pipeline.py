@@ -595,7 +595,7 @@ def load_vg250(zip_path: Path, *, strict_roster: bool = True) -> tuple[gpd.GeoDa
             raise SchemaError(f"metric roster mismatch: missing {set(METRIC_CODES) - got}")
         names = metric.set_index("district_code")["GEN"].to_dict()
         if names != EXPECTED_GEN:
-            raise SchemaError(f"VG250 GEN mismatch vs main.md roster: {names}")
+            raise SchemaError(f"VG250 GEN mismatch vs expected district roster: {names}")
         bb = metric[metric["district_code"] != "11000"]
         if int(bb["EWZ"].sum()) != 2_551_889:
             raise SchemaError("Brandenburg EWZ sum != 2551889")

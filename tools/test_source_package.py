@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class SourcePackage(unittest.TestCase):
     def test_export_inventory_and_relative_references(self):
-        inventory = json.loads((ROOT / 'PUBLICATION.json').read_text(encoding='utf-8'))['files_sha256']
+        inventory = json.loads((ROOT / "powerbi/source-checksums.json").read_text(encoding="utf-8"))
         for name, expected in inventory.items():
             self.assertEqual(hashlib.sha256((ROOT / name).read_bytes()).hexdigest(), expected, name)
         report = ROOT / 'powerbi/portfolio-final'
